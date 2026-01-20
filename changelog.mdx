@@ -1,0 +1,154 @@
+---
+title: Changelog
+description: Track the latest updates and improvements to Angga, including new features and bug fixes.
+---
+
+## Recent Updates
+
+Stay informed about all changes to Angga. You can subscribe to release notifications via the dashboard at `https://dashboard.example.com/notifications`.
+
+<Update label="2024-10-15" description="v1.2.0" tags={["feature", "improvement"]}>
+
+## New Features
+
+- Added real-time collaboration for documentation editing, allowing multiple users to work simultaneously.
+- Introduced version history with diff views to compare changes easily.
+
+## Improvements
+
+- Enhanced search functionality with fuzzy matching and syntax highlighting.
+- Optimized performance for large documentation sites, reducing load times by `>30%`.
+
+## Bug Fixes
+
+- Fixed rendering issues with nested lists in MDX components.
+- Resolved authentication token refresh problems during long sessions.
+
+</Update>
+
+<Update label="2024-09-20" description="v1.1.0" tags={["feature", "bugfix"]}>
+
+## New Features
+
+- Integrated custom themes with support for brand colors like `#3B82F6`.
+- Added export options for PDF and HTML from your documentation spaces.
+
+## Bug Fixes
+
+- Corrected table alignment problems in responsive views.
+- Patched security vulnerability in webhook handling (CVE-2024-XXXX).
+
+## Backward Compatibility
+
+All API endpoints remain unchanged. Update your integrations without modifications.
+
+</Update>
+
+<Update label="2024-08-10" description="v1.0.0" tags={["breaking", "feature"]}>
+
+## Initial Release
+
+- Core documentation management with MDX support.
+- User authentication via API keys and OAuth.
+- Sidebar navigation and search across pages.
+
+## Breaking Changes
+
+- Removed legacy YAML frontmatter parser; migrate to standard format.
+
+To upgrade, run:
+
+````bash
+npm update angga@latest
+````
+
+</Update>
+
+## Upgrade Guide
+
+Follow these steps to upgrade Angga safely.
+
+<Steps>
+  <Step title="Backup" icon="database">
+
+  Export your documentation:
+
+  ```bash
+  angga export --space my-space --format json
+  ```
+
+  </Step>
+  <Step title="Update Package" icon="download">
+
+  ```bash
+  npm install angga@latest
+  ```
+
+  Review [release notes](https://dashboard.example.com/releases) for each version.
+
+  </Step>
+  <Step title="Test Locally" icon="play">
+
+  Start dev server:
+
+  ```bash
+  angga dev
+  ```
+
+  Verify all pages render correctly.
+
+  </Step>
+  <Step title="Deploy" icon="rocket">
+
+  Push to production:
+
+  ```bash
+  angga deploy
+  ```
+
+  </Step>
+</Steps>
+
+<Callout kind="alert">
+  Always test in staging before production. Breaking changes are noted in each release.
+</Callout>
+
+## Feature Highlights
+
+Explore major enhancements across releases.
+
+<Columns cols={3}>
+  <Card title="Real-time Collaboration" icon="users" href="#2024-10-15">
+    Edit docs with your team in real time.
+  </Card>
+  <Card title="Custom Themes" icon="palette" href="#2024-09-20">
+    Brand your docs with colors like `#3B82F6`.
+  </Card>
+  <Card title="Export Options" icon="download" href="#2024-09-20">
+    Generate PDF or HTML exports easily.
+  </Card>
+</Columns>
+
+## Backward Compatibility Notes
+
+Angga maintains `>95%` compatibility between minor versions. Major versions (e.g., v2.0.0) may introduce breaking changes, announced `>30 days` in advance.
+
+| Version | API Changes | Config Changes | Deprecations |
+|---------|-------------|----------------|--------------|
+| v1.2.0  | None       | None           | None         |
+| v1.1.0  | None       | Minor          | YAML parser  |
+| v1.0.0  | Initial    | Standard       | Legacy auth  |
+
+## Upcoming Features
+
+<Expandable title="Preview: AI Assistant" default-open="true">
+  Coming in v1.3.0: Auto-generate summaries and suggest improvements for your docs using AI.
+</Expandable>
+
+<Expandable title="Advanced Analytics">
+  Track page views, search queries, and popular sections in your documentation space.
+</Expandable>
+
+<Callout kind="tip">
+  Check back weekly for updates. Join the community forum at `https://dashboard.example.com/forum` for early access.
+</Callout>

@@ -1,0 +1,123 @@
+---
+title: Getting Started with Angga
+description: Quickly set up your Angga account and create your first documentation space to begin organizing projects.
+---
+
+## Prerequisites
+
+<Callout kind="info">
+Before you begin, ensure you have:
+- A modern web browser like Chrome, Firefox, or Safari
+- An email address for account verification
+- Optional: A Google account for faster sign-up
+</Callout>
+
+## Create Your Angga Account
+
+Sign up takes under 2 minutes. Follow these steps to get started.
+
+<Steps>
+  <Step title="Visit the Dashboard" icon="monitor">
+    Navigate to `https://dashboard.angga.com` and click **Sign Up**.
+  </Step>
+  <Step title="Choose Sign-Up Method" icon="user-plus">
+    Select **Email** or **Continue with Google**.
+  </Step>
+  <Step title="Verify Email" icon="mail">
+    Check your inbox and click the verification link.
+  </Step>
+  <Step title="Complete Profile" icon="edit-3">
+    Enter your name and set a strong password.
+  </Step>
+</Steps>
+
+## Create Your First Documentation Space
+
+Once logged in, create a space to organize your projects.
+
+<Steps>
+  <Step title="Click New Space" icon="plus">
+    From the dashboard, select **New Documentation Space**.
+  </Step>
+  <Step title="Name Your Space" icon="edit">
+    Enter a name like `My Project Docs` and choose a description.
+  </Step>
+  <Step title="Customize Settings" icon="settings">
+    Set visibility to **Private** or **Public** and add team members if needed.
+  </Step>
+  <Step title="Save and Enter" icon="check-circle">
+    Click **Create** to access your new space.
+  </Step>
+</Steps>
+
+## Add Your First Project Documents
+
+Populate your space with markdown files.
+
+<Tabs>
+  <Tab title="Markdown Page" icon="file-text">
+    Click **New Page** > **Markdown**.
+
+    ````markdown
+    ```markdown
+    # Welcome to My Project
+
+    This is your first document.
+
+    ## Features
+    - Fast setup
+    - Team collaboration
+    ```
+    ````
+
+    Save as `introduction.mdx`.
+  </Tab>
+  <Tab title="API Reference" icon="code">
+    Use the API components for structured docs.
+
+    <ParamField path="spaceId" param-type="string" required="true">
+      Your documentation space identifier.
+    </ParamField>
+
+    <ParamField header="Authorization" param-type="string" required="true">
+      Bearer `YOUR_API_KEY`.
+    </ParamField>
+  </Tab>
+</Tabs>
+
+## Interface Tour
+
+Explore the main areas of Angga.
+
+<Columns cols={3}>
+  <Card title="Sidebar Navigation" icon="menu" href="#sidebar">
+    Access spaces, pages, and settings quickly.
+  </Card>
+  <Card title="Editor Toolbar" icon="edit-3" href="#editor">
+    Format text, add components, and preview changes.
+  </Card>
+  <Card title="Preview Pane" icon="eye" href="#preview">
+    See live rendering of your MDX content.
+  </Card>
+</Columns>
+
+## Next Steps
+
+<Callout kind="tip">
+Congratulations! You've set up Angga. Dive deeper with these guides.
+</Callout>
+
+<Columns cols={2}>
+  <Card title="Authentication" icon="shield" href="/authentication">
+    Secure your spaces with API keys and teams.
+  </Card>
+  <Card title="Advanced Components" icon="puzzle" href="/introduction">
+    Master MDX components for rich docs.
+  </Card>
+</Columns>
+
+<Expandable title="Troubleshooting Common Issues" default-open="false">
+- **Login fails?** Clear browser cache or try incognito mode.
+- **Space not visible?** Check permissions in settings.
+- **Editor lags?** Ensure stable internet; large images cause delays.
+</Expandable>
